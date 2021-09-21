@@ -1,1 +1,27 @@
-
+html,
+body {
+	margin: 0px;
+	height: 100vh;
+}
+.wrapper {
+	width: 60%;
+	height: 600px;
+	border: 1px solid black;
+	margin: 30px auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+}
+.box1,
+.box2,
+.box3 {
+	border: 1px solid blue;
+	height: 80%;
+	margin-top: 7%;
+	flex-grow: 1;
+}
+.box2 {
+	flex-grow: 4;
+}
