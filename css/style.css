@@ -1,27 +1,45 @@
-html,
-body {
+* {
 	margin: 0px;
-	height: 100vh;
+	padding: 0px;
+	font-size: 12pt;
+	box-sizing: border-box;
 }
+
 .wrapper {
 	width: 60%;
-	height: 600px;
-	border: 1px solid black;
-	margin: 30px auto;
-	padding: 0 20px;
+	height: 60vh;
+	border: 1px solid #0a0908;
+	background-color: #e2e2e25b;
+	margin: 50px auto;
+	padding: 50px 1% 1% 1%;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	gap: 20px;
+	flex-direction: column;
+	gap: 1%;
 }
-.box1,
-.box2,
-.box3 {
-	border: 1px solid blue;
-	height: 80%;
-	margin-top: 7%;
-	flex-grow: 1;
+[class^="box"] {
+	border: 1px solid #0a0908;
+	background-color: #c99f832a;
+	height: 100%;
+	flex-basis: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .box2 {
-	flex-grow: 4;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: space-around;
+}
+h1 {
+	font-size: 1.5rem;
+	padding: 5px 10px;
+}
+p {
+	padding: 5px 10px;
+}
+@media only screen and (min-width: 768px) {
+	.wrapper {
+		flex-direction: row;
+	}
 }
